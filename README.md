@@ -17,7 +17,7 @@ installed on your machine to make this utility work.
 Installing the tool is easy enough:
 
 ```shell
-go install github.com/wmeints/nyckel
+go install github.com/wmeints/nyckel/cmd/nyckel
 ```
 
 After installation it will be available if you have `$GOBIN` in your `$PATH`
