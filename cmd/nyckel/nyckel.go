@@ -170,9 +170,10 @@ func (cmd *UpdateCmd) Run() error {
 }
 
 var cli struct {
-	Add    AddCmd    `cmd:"add" help:"Add a secret to the secret file"`
-	Remove RemoveCmd `cmd:"remove" help:"Remove a secret from the secret file"`
-	Update UpdateCmd `cmd:"update" help:"Update a secret in the secret file"`
+	Create CreateCmd `cmd:"create" help:"Create a new opaque secret file"`
+	Add    AddCmd    `cmd:"add" help:"Add a secret to an existing opaque secret file"`
+	Remove RemoveCmd `cmd:"remove" help:"Remove a secret from an existing opaque secret file"`
+	Update UpdateCmd `cmd:"update" help:"Update a secret in an existing opaque secret file"`
 }
 
 func main() {
