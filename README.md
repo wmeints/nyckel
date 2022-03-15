@@ -37,7 +37,7 @@ nyckel create <arguments>
 | -------------- | --------------------------------------------------------------------------------- |
 | `--path`       | The path to the opaque secret file                                                |
 | `--key`        | The key for the data to add                                                       |
-| `--data        | The data to be added, can be any string, optionally escaped using double quotes   |
+| `--data`       | The data to be added, can be any string, optionally escaped using double quotes   |
 | `--input-file` | The input file to load the secret data from. You can use this instead of `--data` |
 
 ### Adding data to an existing opaque secret file
@@ -52,7 +52,7 @@ nyckel add <arguments>
 | -------------- | --------------------------------------------------------------------------------- |
 | `--path`       | The path to the opaque secret file                                                |
 | `--key`        | The key for the data to add                                                       |
-| `--data        | The data to be added, can be any string, optionally escaped using double quotes   |
+| `--data`       | The data to be added, can be any string, optionally escaped using double quotes   |
 | `--input-file` | The input file to load the secret data from. You can use this instead of `--data` |
 
 ### Editing data in an existing opaque secret file
@@ -67,7 +67,7 @@ nyckel update <arguments>
 | -------------- | --------------------------------------------------------------------------------- |
 | `--path`       | The path to the opaque secret file                                                |
 | `--key`        | The key for the data to add                                                       |
-| `--data        | The data to be added, can be any string, optionally escaped using double quotes   |
+| `--data`       | The data to be added, can be any string, optionally escaped using double quotes   |
 | `--input-file` | The input file to load the secret data from. You can use this instead of `--data` |
 
 ### Removing data from an existing opaque secret file
