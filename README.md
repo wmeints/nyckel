@@ -33,12 +33,12 @@ You can create a completely new opaque secret file using the following command:
 nyckel create <arguments>
 ```
 
-| Argument      | Description                                                                       |
-| ------------- | --------------------------------------------------------------------------------- |
-| `--path`      | The path to the opaque secret file                                                |
-| `--key`       | The key for the data to add                                                       |
-| `--data       | The data to be added, can be any string, optionally escaped using double quotes   |
-| `--input-file | The input file to load the secret data from. You can use this instead of `--data` |
+| Argument       | Description                                                                       |
+| -------------- | --------------------------------------------------------------------------------- |
+| `--path`       | The path to the opaque secret file                                                |
+| `--key`        | The key for the data to add                                                       |
+| `--data        | The data to be added, can be any string, optionally escaped using double quotes   |
+| `--input-file` | The input file to load the secret data from. You can use this instead of `--data` |
 
 ### Adding data to an existing opaque secret file
 
@@ -48,12 +48,12 @@ You can add data to an existing opaque secret file using the command:
 nyckel add <arguments>
 ```
 
-| Argument      | Description                                                                       |
-| ------------- | --------------------------------------------------------------------------------- |
-| `--path`      | The path to the opaque secret file                                                |
-| `--key`       | The key for the data to add                                                       |
-| `--data       | The data to be added, can be any string, optionally escaped using double quotes   |
-| `--input-file | The input file to load the secret data from. You can use this instead of `--data` |
+| Argument       | Description                                                                       |
+| -------------- | --------------------------------------------------------------------------------- |
+| `--path`       | The path to the opaque secret file                                                |
+| `--key`        | The key for the data to add                                                       |
+| `--data        | The data to be added, can be any string, optionally escaped using double quotes   |
+| `--input-file` | The input file to load the secret data from. You can use this instead of `--data` |
 
 ### Editing data in an existing opaque secret file
 
@@ -63,12 +63,12 @@ You can edit data in an existing opaque secret file using the command:
 nyckel update <arguments>
 ```
 
-| Argument      | Description                                                                       |
-| ------------- | --------------------------------------------------------------------------------- |
-| `--path`      | The path to the opaque secret file                                                |
-| `--key`       | The key for the data to add                                                       |
-| `--data       | The data to be added, can be any string, optionally escaped using double quotes   |
-| `--input-file | The input file to load the secret data from. You can use this instead of `--data` |
+| Argument       | Description                                                                       |
+| -------------- | --------------------------------------------------------------------------------- |
+| `--path`       | The path to the opaque secret file                                                |
+| `--key`        | The key for the data to add                                                       |
+| `--data        | The data to be added, can be any string, optionally escaped using double quotes   |
+| `--input-file` | The input file to load the secret data from. You can use this instead of `--data` |
 
 ### Removing data from an existing opaque secret file
 
@@ -78,7 +78,7 @@ You can add data to an existing opaque secret file using the command:
 nyckel remove <arguments>
 ```
 
-| Argument      | Description                                                                       |
-| ------------- | --------------------------------------------------------------------------------- |
-| `--path`      | The path to the opaque secret file                                                |
-| `--key`       | The key for the data to add                                                       |
+| Argument | Description                        |
+| -------- | ---------------------------------- |
+| `--path` | The path to the opaque secret file |
+| `--key`  | The key for the data to add        |
