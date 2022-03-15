@@ -62,6 +62,13 @@ func (config *Configuration) Save() error {
 	return nil
 }
 
+func New(path string) *Configuration {
+	return &Configuration{
+		Secret: nil,
+		Path:   path,
+	}
+}
+
 // NewOpaqueSecret creates a new opaque secret
 func NewOpaqueSecret(name string) OpaqueSecret {
 	return OpaqueSecret{

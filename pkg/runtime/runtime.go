@@ -4,6 +4,7 @@ import (
 	b64 "encoding/base64"
 	"fmt"
 	"io/ioutil"
+	"os"
 
 	"github.com/wmeints/nyckel/pkg/config"
 )
@@ -76,11 +77,17 @@ func (r *NyckelRuntime) SaveConfiguration() error {
 }
 
 func New(path string) (*NyckelRuntime, error) {
-	config, err := config.Load(path)
+	var c *config.Configuration
 
-	if err != nil {
-		return nil, err
+	if _, err := os.Stat(path); os.IsNotExist(err) {
+		c = config.New(path)
+	} else {
+		c, err = config.Load(path)
+
+		if err != nil {
+			return nil, err
+		}
 	}
 
-	return &NyckelRuntime{Config: config}, nil
+	return &NyckelRuntime{Config: c}, nil
 }
